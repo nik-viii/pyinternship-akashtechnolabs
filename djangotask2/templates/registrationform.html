@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="{% static 'css/registrationform.css' %}" />
+  </head>
+
+  <body>
+    <form class="myForm">
+      <header>
+        <h1 class="h1t">Student Registration Form</h1>
+      </header>
+      <label class="lbl"
+        >Name
+        <input
+          type="text"
+          name="student_name"
+          placeholder="Enter the name"
+          required
+        />
+      </label>
+      <br />
+
+      <label class="lbl"
+        >Phone
+        <input
+          type="tel"
+          name="phone_number"
+          placeholder="Enter the phone number"
+        />
+      </label>
+      <br />
+
+      <label class="lbl"
+        >Email
+        <input
+          type="email"
+          name="email_address"
+          placeholder="Enter the Email address"
+        />
+      </label>
+      <br />
+
+      <label class="lbl"
+        >Date Of Birth
+        <input type="date" class="bordr" />
+      </label>
+      <br />
+
+      <label class="lbl"
+        >Gender
+        <div class="rdo">
+          <label><input type="radio" value="male" name="Gender" /> Male</label>
+          <label
+            ><input type="radio" value="female" name="Gender" /> Female</label
+          >
+          <label><input type="radio" value="other" name="Other" /> Other</label>
+        </div>
+      </label>
+      <br />
+
+      <label class="lbl"
+        >Hobbies
+        <input type="text" name="hobbies" placeholder="Enter the hobbies" />
+      </label>
+      <br />
+
+      <label class="lbl"
+        >Address
+        <textarea
+          class="txtarea"
+          rows="1"
+          placeholder="Enter your address"
+        ></textarea>
+      </label>
+      <br />
+
+      <label class="lbl"
+        >Pincode
+        <input type="text" placeholder="Enter your pincode" />
+      </label>
+      <br />
+
+      <label class="lbl"
+        >City:
+        <select class="txtarea">
+          <option>Surat</option>
+          <option>Vadodara</option>
+          <option selected>Ahmedabad</option>
+          <option>Gandhinagar</option>
+        </select>
+      </label>
+      <br />
+
+      <label class="lbl"
+        >State:
+        <select class="txtarea">
+          <option>M.P.</option>
+          <option>Maharashtra</option>
+          <option>Rajasthan</option>
+          <option selected>Gujarat</option>
+          <option>U.P.</option>
+        </select>
+      </label>
+      <br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <div>
+      <form>
+        <h4>Enter Your Info</h4>
+        <label>
+          <input type="text" class="input" name="name" placeholder="NAME" />
+          <div class="line-box">
+            <div class="line"></div>
+          </div>
+        </label>
+
+        <label>
+          <input type="email" class="input" name="email" placeholder="EMAIL" />
+          <div class="line-box">
+            <div class="line"></div>
+          </div>
+        </label>
+
+        <label>
+          <input type="tel" class="input" name="phone" placeholder="PHONE" />
+          <div class="line-box">
+            <div class="line"></div>
+          </div>
+        </label>
+        <p>*Terms & Conditions</p>
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+  </body>
+</html>

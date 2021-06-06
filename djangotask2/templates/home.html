@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Django Website</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Coda:400,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="menu-wrapper">
+      <div id="menu">
+        <ul>
+          <li class="current_page_item"><a href="/home">Home</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Registration</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="header-wrapper">
+      <div id="header">
+        <div id="logo">
+          <h1><a href="#">Django Website</a></h1>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="page-bgtop"></div>
+      <div id="page">
+        <div>
+          <img
+            src="{% static 'image/django.png' %}"
+            width="920px"
+            height="300px"
+            alt=""
+          />
+        </div>
+        <div id="content">
+          <div class="post">
+            <div class="entry">{% block content %} {% endblock %}</div>
+          </div>
+
+          <div style="clear: both">&nbsp;</div>
+        </div>
+        <div id="sidebar">
+          <ul>
+            <li>
+              <h2>Information</h2>
+              <p>
+                This is the my demo Website! Task of Python Django Internship by
+                Akash Padhiyar Sir.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div style="clear: both">&nbsp;</div>
+      </div>
+      <div id="page-bgbtm"></div>
+    </div>
+    <div id="footer">
+      <p>All rights reserved.</p>
+    </div>
+  </body>
+</html>
